@@ -1,0 +1,56 @@
+{
+  "users": [
+    {
+      "name": "Jonatas",
+      "email": "teste@teste.com",
+      "password": "123456"
+    },
+    {
+      "name": "Ana Beatriz",
+      "email": "ana@teste.com",
+      "password": "123456"
+    },
+    {
+      "name": "José",
+      "email": "jose@teste.com",
+      "password": "123456"
+    }
+  ],
+  "products": [
+    {
+      "name": "teste 1",
+      "description": "teste teste teste teste",
+      "price": "10",
+      "amount": "2",
+      "category": "bichinho"
+    },
+    {
+      "name": "teste 2",
+      "description": "teste teste teste teste",
+      "price": "10",
+      "amount": "2",
+      "category": "bichinho"
+    },
+    {
+      "name": "teste 3",
+      "description": "teste teste teste teste",
+      "price": "10",
+      "amount": "2",
+      "category": "bichinho"
+    },
+    {
+      "name": "teste 4",
+      "description": "teste teste teste teste",
+      "price": "10",
+      "amount": "2",
+      "category": "bichinho"
+    },
+    {
+      "name": "teste 5",
+      "description": "teste teste teste teste",
+      "price": "10",
+      "amount": "2",
+      "category": "bichinho"
+    }
+  ]
+}
