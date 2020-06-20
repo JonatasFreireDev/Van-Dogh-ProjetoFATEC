@@ -14,6 +14,7 @@ export default createGlobalStyle`
     background: #fff;
     -webkit-font-smoothing: antialiased;
     height: 100%;
+    overflow-x: hidden;
   }
 
   body, input, button{
@@ -27,5 +28,10 @@ export default createGlobalStyle`
 
   button{
     cursor: pointer;
+  }
+
+  a, a:active, a:hover{
+    text-decoration: none;
+    color: black;
   }
 `;

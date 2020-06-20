@@ -38,14 +38,17 @@ export const Item = styled.div`
   text-align: center;
   height: 350px;
   transition: all 0.3s;
+
   &:hover {
     transform: scale(1.05);
   }
+
   img {
     max-width: 200px;
     max-height: 200px;
     margin: auto;
   }
+
   p {
     font-weight: bold;
     margin: 15px;

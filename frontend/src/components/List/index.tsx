@@ -7,15 +7,18 @@ import Slider from 'react-slick';
 import * as S from './styles';
 
 interface Config {
-  items: Item[];
+  items?: Item[];
   nameList?: string;
 }
 
 interface Item {
   id: number;
-  title: string;
-  picture: string;
+  name: string;
+  description: string;
   price: number;
+  amount: number;
+  picture: string;
+  category: string;
 }
 
 const List: React.FC<Config> = ({ items, nameList = 'List' }) => {
@@ -35,8 +38,8 @@ const List: React.FC<Config> = ({ items, nameList = 'List' }) => {
     (item: Item) => (
       <>
         <img src={item.picture} alt={String(item.id)} />
-        <Link to={`/items/${item.id}`}>
-          <p>{item.title}</p>
+        <Link to={`/products/${item.id}`}>
+          <p>{item.name}</p>
         </Link>
         {renderPrice(item.price)}
       </>
@@ -57,12 +60,12 @@ const List: React.FC<Config> = ({ items, nameList = 'List' }) => {
   return (
     <S.ListItems>
       <p>{nameList}</p>
-      {items.length >= 1 ? (
+      {items && items.length >= 1 ? (
         <Slider
           dots
           infinite
           speed={500}
-          slidesToShow={items.length <= 3 ? items.length : 3}
+          slidesToShow={items.length <= 3 ? items?.length : 3}
           slidesToScroll={3}
           responsive={[
             {
@@ -74,7 +77,7 @@ const List: React.FC<Config> = ({ items, nameList = 'List' }) => {
             },
           ]}
         >
-          {items.map((item) => (
+          {items?.map((item) => (
             <S.Item key={item.id}>{renderItems(item)}</S.Item>
           ))}
         </Slider>

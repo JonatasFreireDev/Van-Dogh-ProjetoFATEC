@@ -24,7 +24,7 @@ export const Content = styled.div`
   margin-top: 10px;
 `;
 
-export const Logo = styled.div`
+export const Logo = styled(LinkDom)`
   margin: 5px;
   display: flex;
 

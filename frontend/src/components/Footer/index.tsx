@@ -23,14 +23,12 @@ const Footer: React.FC = () => {
             aria-hidden="false"
           />
         </S.MapaSite>
-        <S.Contato>
-          <p>Nome: Jonatas F</p>
-          <p>Telefone: (19) 9978-4539</p>
-          <p>
-            Atendimento de segunda a <br /> sexta das 08:00 as 17:00
-          </p>
-        </S.Contato>
         <div>
+          <S.Contato>
+            <p>Nome: Jonatas F</p>
+            <p>Telefone: (19) 9978-4539</p>
+            <p>Atendimento de segunda a sexta das 08:00 as 17:00</p>
+          </S.Contato>
           <S.Redes>
             <FaFacebookSquare size="30" />
             <FaInstagram size="30" />

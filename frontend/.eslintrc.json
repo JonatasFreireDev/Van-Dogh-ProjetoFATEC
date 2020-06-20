@@ -38,6 +38,7 @@
       "error",
       { "allowExpressions": true }
     ],
+    "@typescript-eslint/no-unused-expressions": "true",
     "import/extensions": [
       "error",
       "ignorePackages",
@@ -49,12 +50,7 @@
   },
   "settings": {
     "import/resolver": {
-      "typescript": {
-        "extensions": [".js", ".jsx", ".ts", ".tsx"]
-      },
-      "node": {
-        "extensions": [".js", ".jsx", ".ts", ".tsx"]
-      }
+      "typescript": {}
     }
   }
 }

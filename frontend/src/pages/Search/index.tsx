@@ -6,7 +6,6 @@ import * as S from './styles';
 import List from '../../components/List';
 import Loading from '../../components/Loading';
 
-import { Link } from 'react-router-dom';
 import { useFavorite } from '../../hooks/FavoriteContext';
 
 interface ProductsResponse {
@@ -19,7 +18,7 @@ interface ProductsResponse {
   category: string;
 }
 
-const Home: React.FC = () => {
+const Search: React.FC = () => {
   const [products, setProducts] = useState<ProductsResponse[]>([]);
   const [loading, setLoading] = useState(true);
   const { favorites } = useFavorite();
@@ -50,4 +49,4 @@ const Home: React.FC = () => {
   );
 };
 
-export default Home;
+export default Search;

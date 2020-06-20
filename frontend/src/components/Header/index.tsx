@@ -33,7 +33,7 @@ const Header: React.FC = () => {
   return (
     <S.Container>
       <S.Content>
-        <S.Logo>
+        <S.Logo to="/">
           <img src={Dog} alt="Dog" />
         </S.Logo>
         <S.Form onSubmit={handleSubmit}>
