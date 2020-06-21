@@ -1,6 +1,7 @@
 import React, { useCallback, useState } from 'react';
 import * as S from './styles';
-import api from '../../services/api';
+
+import { useHistory } from 'react-router-dom';
 
 import Dog from '../../assets/Dog.svg';
 import Bed from '../../assets/Bed.svg';
@@ -19,16 +20,18 @@ import {
 
 const Header: React.FC = () => {
   const [search, setSearch] = useState<string>('');
+  const history = useHistory();
 
-  const handleSubmit = useCallback(async (e) => {
-    e.preventDefault();
-
-    const response = await api.get('/products');
-
-    const { data } = response;
-
-    console.log(data);
-  }, []);
+  const handleSubmit = useCallback(
+    async (e) => {
+      e.preventDefault();
+      if (search !== '') {
+        history.push(`/product?search=${search}`);
+        setSearch('');
+      }
+    },
+    [search, history],
+  );
 
   return (
     <S.Container>

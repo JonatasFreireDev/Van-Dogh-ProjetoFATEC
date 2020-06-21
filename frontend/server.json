@@ -61,6 +61,15 @@
       "amount": "2",
       "picture": "https://media.nature.com/lw800/magazine-assets/d41586-020-01430-5/d41586-020-01430-5_17977552.jpg",
       "category": "bichinho"
+    },
+    {
+      "id": 6,
+      "name": "Naruto",
+      "description": "sasuke",
+      "price": "10",
+      "amount": "2",
+      "picture": "https://media.nature.com/lw800/magazine-assets/d41586-020-01430-5/d41586-020-01430-5_17977552.jpg",
+      "category": "bichinho"
     }
   ]
 }

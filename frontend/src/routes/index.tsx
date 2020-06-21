@@ -11,7 +11,7 @@ import ErrorMessage from '../components/ErrorMessage';
 const Routes: React.FC = () => (
   <Switch>
     <Route path="/" exact component={Home} />
-    <Route path="/search" component={Search} />
+    <Route path="/product" exact component={Search} />
     <Route path="/products/:id" component={Product} />
     <Route
       path="*"

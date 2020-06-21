@@ -6,7 +6,6 @@ import * as S from './styles';
 import List from '../../components/List';
 import Loading from '../../components/Loading';
 
-import { Link } from 'react-router-dom';
 import { useFavorite } from '../../hooks/FavoriteContext';
 
 interface ProductsResponse {

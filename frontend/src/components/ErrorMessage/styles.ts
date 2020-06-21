@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 
 export const Container = styled.div`
-  color: ${(props) => props.theme.colors.grey};
+  color: ${(props) => props.theme.colors.greyDefault};
   font-size: 40px;
   display: flex;
   flex-direction: column;

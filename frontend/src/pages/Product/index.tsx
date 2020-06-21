@@ -5,6 +5,7 @@ import * as S from './styles';
 
 import ErrorMessage from '../../components/ErrorMessage';
 import Loading from '../../components/Loading';
+import List from '../../components/List';
 
 import { useFavorite } from '../../hooks/FavoriteContext';
 import { useParams } from 'react-router-dom';
@@ -23,13 +24,14 @@ interface Product {
 
 const Product: React.FC = () => {
   const [product, setProduct] = useState<Product>({} as Product);
+  const [products, setProducts] = useState<Product[]>([]);
   const [loading, setLoading] = useState(true);
   const [failure, setFailure] = useState({ status: false, message: '' });
   const { hasFavorite, addFavorite, rmFavorite } = useFavorite();
   const { id } = useParams();
 
   useEffect(() => {
-    async function loadProductsAsync(): Promise<void> {
+    async function loadProductAsync(): Promise<void> {
       try {
         const response = await api
           .get<Product[]>(`/products?id=${id}`)
@@ -41,14 +43,37 @@ const Product: React.FC = () => {
 
         setProduct(productResponse);
         setLoading(false);
+        setFailure({ status: false, message: '' });
       } catch (err) {
         setFailure({ status: true, message: err.message });
         setLoading(false);
       }
     }
 
-    loadProductsAsync();
+    loadProductAsync();
   }, [id]);
+
+  useEffect(() => {
+    async function loadProductsAsync(): Promise<void> {
+      try {
+        const response = await api.get<Product[]>(
+          `/products?category=${product.category}`,
+        );
+
+        const { data } = response;
+
+        setProducts([...data]);
+        setFailure({ status: false, message: '' });
+        setLoading(false);
+      } catch (err) {
+        setLoading(false);
+      }
+    }
+
+    if (product.category) {
+      loadProductsAsync();
+    }
+  }, [product.category]);
 
   const handleFavorite = useCallback(
     (id: number) => {
@@ -60,7 +85,7 @@ const Product: React.FC = () => {
         rmFavorite(id);
       }
     },
-    [hasFavorite],
+    [hasFavorite, addFavorite, rmFavorite],
   );
 
   const handleSubmit = useCallback((e) => {
@@ -75,12 +100,13 @@ const Product: React.FC = () => {
       ) : (
         <S.Content>
           <S.Image>
-            <img src={product.picture} />
+            <img src={product.picture} alt={product.name} />
           </S.Image>
           <S.Details isFavorite={hasFavorite(product.id)}>
             <div>
               <small>{product.category}</small>
               <GiPawHeart
+                title="Adicionar aos favoritos !"
                 onClick={() => {
                   handleFavorite(product.id);
                 }}
@@ -112,6 +138,11 @@ const Product: React.FC = () => {
             <p>{product.description}</p>
           </S.Details>
         </S.Content>
+      )}
+      {loading ? (
+        <Loading />
+      ) : (
+        <List items={products} nameList="Produtos parecidos !" />
       )}
     </S.Container>
   );

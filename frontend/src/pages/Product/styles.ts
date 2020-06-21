@@ -20,6 +20,7 @@ export const Content = styled.div`
   display: flex;
   flex-direction: row;
   width: 100%;
+  margin-bottom: 100px;
 `;
 
 export const Image = styled.div`
@@ -79,10 +80,6 @@ export const DetailsPrice = styled.div`
 `;
 
 export const Form = styled.form`
-  margin-top: 10px;
-  display: flex;
-  flex-direction: column;
-
   & > button {
     border: 0px;
     border-radius: 10px;
