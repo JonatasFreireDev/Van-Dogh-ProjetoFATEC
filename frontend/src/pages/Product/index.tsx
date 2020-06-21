@@ -88,9 +88,6 @@ const Product: React.FC = () => {
     [hasFavorite, addFavorite, rmFavorite],
   );
 
-  const handleSubmit = useCallback((e) => {
-    e.preventDefault();
-  }, []);
   return (
     <S.Container>
       {loading ? (
@@ -102,8 +99,8 @@ const Product: React.FC = () => {
           <S.Image>
             <img src={product.picture} alt={product.name} />
           </S.Image>
-          <S.Details isFavorite={hasFavorite(product.id)}>
-            <div>
+          <S.Details>
+            <S.DetailsHeader isFavorite={hasFavorite(product.id)}>
               <small>{product.category}</small>
               <GiPawHeart
                 title="Adicionar aos favoritos !"
@@ -111,31 +108,23 @@ const Product: React.FC = () => {
                   handleFavorite(product.id);
                 }}
               />
-            </div>
-            <div>
-              <S.DetailsPrice>
+            </S.DetailsHeader>
+
+            <S.DetailsPrice>
+              <div>
                 <h2>{product.name}</h2>
                 <p>
                   R$ <big>{product.price}</big>.<small>00</small>
                 </p>
                 <span>Quantidade: {product.amount}</span>
-              </S.DetailsPrice>
-              <S.Form
-                onSubmit={(e) => {
-                  handleSubmit(e);
-                }}
-              >
-                <S.AmountPrice>
-                  <button>-</button>
-                  <p> 0 </p>
-                  <button>+</button>
-                </S.AmountPrice>
-                <button type="submit">Comprar</button>
-                <br />
-              </S.Form>
-            </div>
-            <h3>Descrição:</h3>
-            <p>{product.description}</p>
+              </div>
+              <button>Comprar</button>
+            </S.DetailsPrice>
+
+            <S.Description>
+              <h3>Descrição:</h3>
+              <p>{product.description}</p>
+            </S.Description>
           </S.Details>
         </S.Content>
       )}

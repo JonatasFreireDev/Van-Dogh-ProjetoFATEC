@@ -8,24 +8,16 @@ import Loading from '../../components/Loading';
 
 import { useFavorite } from '../../hooks/FavoriteContext';
 
-interface ProductsResponse {
-  id: number;
-  name: string;
-  description: string;
-  price: number;
-  amount: number;
-  picture: string;
-  category: string;
-}
+import IProduct from '../../Interface/IProduct';
 
 const Home: React.FC = () => {
-  const [products, setProducts] = useState<ProductsResponse[]>([]);
+  const [products, setProducts] = useState<IProduct[]>([]);
   const [loading, setLoading] = useState(true);
   const { favorites } = useFavorite();
 
   useEffect(() => {
     async function loadProductsAsync(): Promise<void> {
-      const response = await api.get<ProductsResponse[]>('/products');
+      const response = await api.get<IProduct[]>('/products');
 
       const { data } = response;
 

@@ -13,6 +13,11 @@ export const Container = styled.div`
   width: 100%;
   margin: 20px auto;
 
+  h1::first-letter {
+    color: red;
+    text-transform: uppercase;
+  }
+
   @media only screen and (max-width: 600px) {
     & {
       padding: 15px;
@@ -21,6 +26,11 @@ export const Container = styled.div`
 `;
 
 export const Content = styled.div`
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
   max-width: 980px;
   width: 100%;
   margin: 20px auto;
@@ -36,14 +46,11 @@ export const Content = styled.div`
 
 export const Product = styled.div`
   display: grid;
-  max-width: 980px;
-  width: 100%;
-  grid-template-columns: 2fr 2fr 1fr;
-  grid-template-rows: 200px;
-  grid-template-areas: 'img desc fav';
-  grid-gap: 10px;
-  margin-bottom: 20px;
+  grid-template-areas: 'img img' 'desc fav';
+  margin: 13px;
+  border-radius: 10px;
   transition: transform 0.3s;
+  box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.75);
 
   &:hover {
     transform: scale(1.05);
@@ -59,11 +66,15 @@ export const Image = styled.div`
   grid-area: img;
 
   img {
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
     max-height: 200px;
   }
 `;
 
 export const Description = styled.div`
+  display: block;
+  padding: 7px;
   grid-area: desc;
 `;
 
@@ -71,6 +82,7 @@ export const Favorite = styled.div<PropsContent>`
   display: flex;
   justify-content: flex-end;
   grid-area: fav;
+  padding: 7px;
 
   svg {
     cursor: pointer;

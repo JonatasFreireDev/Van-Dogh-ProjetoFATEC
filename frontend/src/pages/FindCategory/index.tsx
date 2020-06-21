@@ -11,36 +11,28 @@ import { useLocation, Link } from 'react-router-dom';
 
 import { useFavorite } from '../../hooks/FavoriteContext';
 
-interface Products {
-  id: number;
-  name: string;
-  description: string;
-  price: number;
-  amount: number;
-  picture: string;
-  category: string;
-}
+import IProduct from '../../Interface/IProduct';
 
-const Search: React.FC = () => {
-  const [products, setProducts] = useState<Products[]>([]);
+const FindCategory: React.FC = () => {
+  const [products, setProducts] = useState<IProduct[]>([]);
   const [loading, setLoading] = useState(true);
   const [page, setPage] = useState(1);
   const [failure, setFailure] = useState({ status: false, message: '' });
   const { hasFavorite, addFavorite, rmFavorite } = useFavorite();
   const location = useLocation();
-  const paramter = new URLSearchParams(String(location.search)).get('search');
+  const paramter = new URLSearchParams(String(location.search)).get('name');
 
   useEffect(() => {
     async function loadProductsAsync(): Promise<void> {
       try {
-        const response = await api.get<Products[]>(
-          `/products?q=${paramter}&_page=${page}&_limit=4`,
+        const response = await api.get<IProduct[]>(
+          `/products?category=${paramter}&_page=${page}`,
         );
 
         const { data } = response;
 
         if (data.length <= 0) {
-          throw new Error('Não foi encontrado nenhum produto !');
+          throw new Error('Categoria nao foi encontrada !');
         }
 
         setProducts([...data]);
@@ -76,10 +68,8 @@ const Search: React.FC = () => {
         <ErrorMessage message={failure.message} />
       ) : (
         <>
+          <h1>{paramter}</h1>
           <S.Content>
-            <h3>
-              Busca por <strong>{paramter}</strong> resultou em...
-            </h3>
             {products.map((product) => (
               <S.Product key={product.id}>
                 <S.Image>
@@ -103,7 +93,6 @@ const Search: React.FC = () => {
               </S.Product>
             ))}
           </S.Content>
-
           <S.Pagination page={page}>
             <button
               onClick={() => {
@@ -116,11 +105,11 @@ const Search: React.FC = () => {
             <span>{page}</span>
             <button
               onClick={() => {
-                products.length <= 3
+                products.length <= 10
                   ? console.log('não permitido')
                   : setPage(page + 1);
               }}
-              disabled={products.length <= 3 ? true : false}
+              disabled={products.length <= 10 ? true : false}
             >
               Next
             </button>
@@ -131,4 +120,4 @@ const Search: React.FC = () => {
   );
 };
 
-export default Search;
+export default FindCategory;

@@ -60,22 +60,22 @@ const Header: React.FC = () => {
       </S.Content>
       <S.Content>
         <S.Nav>
-          <S.Link to="/">
+          <S.Link to="/category?name=roupas">
             <img src={Clothes} alt="Clothes" title="Clothes" />
           </S.Link>
-          <S.Link to="/">
+          <S.Link to="/category?name=coleira">
             <img src={Coleira} alt="Coleira" title="Coleira" />
           </S.Link>
-          <S.Link to="/">
+          <S.Link to="/category?name=alimentos">
             <img src={Meat} alt="Meat" title="Meat" />
           </S.Link>
-          <S.Link to="/">
+          <S.Link to="/category?name=casa">
             <img src={House} alt="House" title="House" />
           </S.Link>
-          <S.Link to="/">
+          <S.Link to="/category?name=cama">
             <img src={Bed} alt="Bed" title="Bed" />
           </S.Link>
-          <S.Link to="/">
+          <S.Link to="/category?name=brinquedos">
             <img src={Toys} alt="Toys" title="Toys" />
           </S.Link>
         </S.Nav>

@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+import { Link } from 'react-router-dom';
 
 interface PropsContent {
   isFavorite: boolean;
@@ -26,61 +27,54 @@ export const Content = styled.div`
 export const Image = styled.div`
   max-width: 500px;
   width: 100%;
+  transition: all 0.5s;
 
+  &:hover {
+    transform: rotate(-5deg);
+  }
   img {
     width: 100%;
     border-radius: 50px;
   }
 `;
 
-export const Details = styled.div<PropsContent>`
+export const Details = styled.div`
+  display: grid;
+  grid-template-rows: 25px 100px;
+  grid-template-areas: 'head' 'details' 'desc';
   width: 100%;
   margin-left: 30px;
+`;
 
-  div:nth-child(1) {
-    display: flex;
-    justify-content: space-between;
-
-    svg {
-      cursor: pointer;
-      width: 30px;
-      height: 30px;
-      color: ${(props) => (props.isFavorite ? 'red' : 'grey')};
-    }
-  }
-
-  div:nth-child(2) {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: flex-start;
-  }
-
-  span {
-    font-size: 15px;
-  }
+export const DetailsHeader = styled.div<PropsContent>`
+  display: flex;
+  justify-content: space-between;
+  grid-area: head;
 
   small {
-    font-size: 12px;
     opacity: 0.5;
   }
 
-  p:nth-child(3) {
-    font-weight: bold;
+  small::first-letter {
+    color: red;
+    text-transform: uppercase;
   }
 
-  button {
-    margin-top: 10px;
+  svg {
+    cursor: pointer;
+    width: 30px;
+    height: 30px;
+    color: ${(props) => (props.isFavorite ? 'red' : 'grey')};
   }
 `;
 
 export const DetailsPrice = styled.div`
   display: flex;
-  flex-direction: column;
-`;
+  justify-content: space-between;
+  align-items: center;
+  grid-area: details;
 
-export const Form = styled.form`
-  & > button {
+  button {
     border: 0px;
     border-radius: 10px;
     width: 130px;
@@ -89,19 +83,7 @@ export const Form = styled.form`
   }
 `;
 
-export const AmountPrice = styled.div`
-  display: flex;
-  flex-direction: row;
-  text-align: center;
-  align-content: center;
-  margin-top: 10px;
-  align-items: center;
-
-  button {
-    margin: 0px;
-    width: 50px;
-    border: 0px;
-    border-radius: 5px;
-    background: ${(props) => props.theme.colors.buttonChangeAmount};
-  }
+export const Description = styled.div`
+  width: 100%;
+  grid-area: desc;
 `;

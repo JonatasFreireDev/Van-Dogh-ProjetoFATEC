@@ -24,16 +24,16 @@
       "price": "10",
       "amount": "2",
       "picture": "https://media.nature.com/lw800/magazine-assets/d41586-020-01430-5/d41586-020-01430-5_17977552.jpg",
-      "category": "bichinho"
+      "category": "clothes"
     },
     {
       "id": 2,
       "name": "teste 2",
-      "description": "teste teste teste teste",
+      "description": "teste teste teste testeteste teste teste testeteste teste teste testeteste teste teste testeteste teste teste teste",
       "price": "10",
       "amount": "2",
       "picture": "https://i.ytimg.com/vi/7Zn53s41Qk8/hqdefault.jpg",
-      "category": "bichinho"
+      "category": "coleira"
     },
     {
       "id": 3,
@@ -42,7 +42,7 @@
       "price": "10",
       "amount": "2",
       "picture": "https://super.abril.com.br/wp-content/uploads/2019/04/si_cachorroinstagram_home.png",
-      "category": "bichinho"
+      "category": "meat"
     },
     {
       "id": 4,
@@ -51,7 +51,7 @@
       "price": "10",
       "amount": "2",
       "picture": "https://media.nature.com/lw800/magazine-assets/d41586-020-01430-5/d41586-020-01430-5_17977552.jpg",
-      "category": "bichinho"
+      "category": "clothes"
     },
     {
       "id": 5,
@@ -60,7 +60,7 @@
       "price": "10",
       "amount": "2",
       "picture": "https://media.nature.com/lw800/magazine-assets/d41586-020-01430-5/d41586-020-01430-5_17977552.jpg",
-      "category": "bichinho"
+      "category": "clothes"
     },
     {
       "id": 6,
@@ -69,7 +69,34 @@
       "price": "10",
       "amount": "2",
       "picture": "https://media.nature.com/lw800/magazine-assets/d41586-020-01430-5/d41586-020-01430-5_17977552.jpg",
-      "category": "bichinho"
+      "category": "clothes"
+    },
+    {
+      "id": 7,
+      "name": "Naruto",
+      "description": "sasuke",
+      "price": "10",
+      "amount": "2",
+      "picture": "https://media.nature.com/lw800/magazine-assets/d41586-020-01430-5/d41586-020-01430-5_17977552.jpg",
+      "category": "clothes"
+    },
+    {
+      "id": 8,
+      "name": "Naruto",
+      "description": "sasuke",
+      "price": "10",
+      "amount": "2",
+      "picture": "https://media.nature.com/lw800/magazine-assets/d41586-020-01430-5/d41586-020-01430-5_17977552.jpg",
+      "category": "clothes"
+    },
+    {
+      "id": 9,
+      "name": "Naruto",
+      "description": "sasuke",
+      "price": "10",
+      "amount": "2",
+      "picture": "https://media.nature.com/lw800/magazine-assets/d41586-020-01430-5/d41586-020-01430-5_17977552.jpg",
+      "category": "clothes"
     }
   ]
 }
