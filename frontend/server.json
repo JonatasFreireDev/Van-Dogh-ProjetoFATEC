@@ -19,84 +19,426 @@
   "products": [
     {
       "id": 1,
-      "name": "teste 1",
-      "description": "teste teste teste teste",
-      "price": "10",
-      "amount": "2",
-      "picture": "https://media.nature.com/lw800/magazine-assets/d41586-020-01430-5/d41586-020-01430-5_17977552.jpg",
-      "category": "clothes"
+      "name": "Ração Seca Nutrilus Pro Frango & Carne para Cães Adultos",
+      "description": "A Ração Seca Nutrilus Pro Frango & Carne para Cães Adultos traz nutrição de alta qualidade pelo melhor custo beneficio. Desenvolvido por veterinários a partir de ingredientes selecionados, sem corantes e aromatizantes artificiais, a Ração Seca Nutrilus Pro Frango & Carne para Cães Adultos garante uma alimentação balanceada e sabor irresistível.",
+      "price": 99.1,
+      "amount": 10,
+      "picture": "https://www.petlove.com.br/images/products/223842/product/Ra%C3%A7%C3%A3o_Seca_Nutrilus_Pro_Frango___Carne_para_C%C3%A3es_Adultos_2492301_15KG.jpg?1589384764",
+      "category": "alimentos"
     },
     {
       "id": 2,
-      "name": "teste 2",
-      "description": "teste teste teste testeteste teste teste testeteste teste teste testeteste teste teste testeteste teste teste teste",
-      "price": "10",
-      "amount": "2",
-      "picture": "https://i.ytimg.com/vi/7Zn53s41Qk8/hqdefault.jpg",
-      "category": "coleira"
+      "name": "Ração Úmida Pedigree Sachê Cordeiro ao Molho para Cães Adultos de Raças Pequenas",
+      "description": "A Ração Úmida Pedigree Sachê Cordeiro ao Molho para Cães Adultos de Raças Pequenas é feita com deliciosos pedaços de carne cozidos a vapor que proporcionam aos cães todo o sabor que eles adoram. É uma refeição completa e balanceada para ser servida todos os dias. Também possui um balanço ideal de fibras, que proporciona fezes mais firmes e fáceis de limpar.",
+      "price": 2.99,
+      "amount": 50,
+      "picture": "https://www.petlove.com.br/images/products/204622/product/Ra%C3%A7%C3%A3o_%C3%9Amida_Pedigree_Sach%C3%AA_Cordeiro_ao_Molho_para_C%C3%A3es_Adultos_de_Ra%C3%A7as_Pequenas_310236573.jpg?1556421346",
+      "category": "alimentos"
     },
     {
       "id": 3,
-      "name": "teste 3",
-      "description": "teste teste teste teste",
-      "price": "10",
-      "amount": "2",
-      "picture": "https://super.abril.com.br/wp-content/uploads/2019/04/si_cachorroinstagram_home.png",
-      "category": "meat"
+      "name": "Ração Premier Golden Special Cães Adultos Frango e Carne",
+      "description": "A Ração Premier Golden Special Cães Adultos Frango e Carne é um alimento completo, não é recomendado nenhum tipo de suplementação, devido a sua alta concentração de nutrientes.",
+      "price": 109.99,
+      "amount": 7,
+      "picture": "https://www.petlove.com.br/images/products/210723/product/Ra%C3%A7%C3%A3o_Premier_Golden_Special_C%C3%A3es_Adultos_Frango_e_Carne_-_15_Kg_1213490_2.jpg?1562151327",
+      "category": "alimentos"
     },
     {
       "id": 4,
-      "name": "teste 4",
-      "description": "teste teste teste teste",
-      "price": "10",
-      "amount": "2",
-      "picture": "https://media.nature.com/lw800/magazine-assets/d41586-020-01430-5/d41586-020-01430-5_17977552.jpg",
-      "category": "clothes"
+      "name": "Ração Úmida Pedigree Sachê Carne ao Molho para Cães Filhotes",
+      "description": "A Ração Úmida Pedigree Sachê Carne ao Molho para Cães Filhotes é feita com deliciosos pedaços de carne cozidos a vapor que proporcionam aos cães todo o sabor que eles adoram. É uma refeição completa e balanceada para ser servida todos os dias. Também possui um balanço ideal de fibras, que proporciona fezes mais firmes e fáceis de limpar.",
+      "price": 3.99,
+      "amount": 10,
+      "picture": "https://www.petlove.com.br/images/products/221454/product/Ra%C3%A7%C3%A3o_%C3%9Amida_Pedigree_Sach%C3%AA_Carne_ao_Molho_para_C%C3%A3es_Filhotes_3108194.jpg?1584448869",
+      "category": "alimentos"
     },
     {
       "id": 5,
-      "name": "teste 5",
-      "description": "teste teste teste teste",
-      "price": "10",
-      "amount": "2",
-      "picture": "https://media.nature.com/lw800/magazine-assets/d41586-020-01430-5/d41586-020-01430-5_17977552.jpg",
-      "category": "clothes"
+      "name": "Petisco Nestlé Purina Doguitos Bifinho de Carne para Cães",
+      "description": "O Petisco Nestlé Purina Doguitos Bifinho de Carne para Cães é nutritivo e muito saboroso. Inspirado nos diversos tipos de carne que serve no rodízio, possui sabor, aroma e textura irresistíveis. Uma ótima opção para treinar ou agradar o seu pet.",
+      "price": 4.5,
+      "amount": 3,
+      "picture": "https://www.petlove.com.br/images/products/209356/product/Petisco_Nestl%C3%A9_Purina_Doguitos_Bifinho_de_Carne_para_C%C3%A3es_31267420-1_1.jpg?1560428386",
+      "category": "alimentos"
     },
     {
       "id": 6,
-      "name": "Naruto",
-      "description": "sasuke",
-      "price": "10",
-      "amount": "2",
-      "picture": "https://media.nature.com/lw800/magazine-assets/d41586-020-01430-5/d41586-020-01430-5_17977552.jpg",
-      "category": "clothes"
+      "name": "Ração Úmida Pedigree Lata Carne ao Molho para Cães Adultos - 290 g",
+      "description": "A Ração Úmida Pedigree Lata Carne ao Molho para Cães Adultos é um alimento feito com deliciosos pedaços de carne cozidos a vapor que proporcionam aos cães todo o sabor que eles adoram. É uma refeição completa e balanceada para ser servida todos os dias. Também possui um balanço ideal de fibras, que contribui para fezes mais firmes e fáceis de limpar.",
+      "price": 6.8,
+      "amount": 10,
+      "picture": "https://www.petlove.com.br/images/products/208241/product/Ra%C3%A7%C3%A3o_%C3%9Amida_Pedigree_Lata_Carne_ao_Molho_para_C%C3%A3es_Adultos_-_290_g_3104824_1.jpg?1558523452",
+      "category": "alimentos"
     },
     {
       "id": 7,
-      "name": "Naruto",
-      "description": "sasuke",
-      "price": "10",
-      "amount": "2",
-      "picture": "https://media.nature.com/lw800/magazine-assets/d41586-020-01430-5/d41586-020-01430-5_17977552.jpg",
-      "category": "clothes"
+      "name": "Ração Úmida Pet Delícia Natural Risotinho de Frango Fácil Digestão",
+      "description": "A Ração Pet Delícia Risotinho de Frango é uma deliciosa receita balanceada para cães, feita com as melhores partes do frango, arroz, legumes, vitaminas e minerais. Receita de baixo sódio, rica em ômegas 3 e 6, antioxidantes e anti-inflamatórios. Indicada para animais que necessitam uma restrição de sódio, que tem uma digestão lenta ou que precisam de uma dieta leve e de fácil digestão.",
+      "price": 12.0,
+      "amount": 5,
+      "picture": "https://www.petlove.com.br/images/products/218275/product/Ra%C3%A7%C3%A3o_Pet_Del%C3%ADcia_Risotinho_de_Frango_3105786-1.jpg?1578337853",
+      "category": "alimentos"
     },
     {
       "id": 8,
-      "name": "Naruto",
-      "description": "sasuke",
-      "price": "10",
-      "amount": "2",
-      "picture": "https://media.nature.com/lw800/magazine-assets/d41586-020-01430-5/d41586-020-01430-5_17977552.jpg",
-      "category": "clothes"
+      "name": "Ração Premier Pet Formula Cães Filhotes Raças Grandes e Gigantes Frango - 15 Kg",
+      "description": "A Ração Premier Pet Formula Cães Filhotes Raças Grandes e Gigantes Frango é um alimento desenvolvido para cães filhotes de raças grandes e gigantes desde o desmame até a idade adulta. Contribui para uma dieta com energia moderada, e evita que sua estrutura óssea de filhote tenha que suportar prematuramente um peso não condizente com seu desenvolvimento ainda incompleto, dessa forma, reduz-se a predisposição ao aparecimento de doenças articulares.",
+      "price": 189.9,
+      "amount": 2,
+      "picture": "https://www.petlove.com.br/images/products/178728/product/3108282.jpg?1556410100",
+      "category": "alimentos"
     },
     {
       "id": 9,
-      "name": "Naruto",
-      "description": "sasuke",
-      "price": "10",
-      "amount": "2",
-      "picture": "https://media.nature.com/lw800/magazine-assets/d41586-020-01430-5/d41586-020-01430-5_17977552.jpg",
-      "category": "clothes"
+      "name": "Capa de Chuva Elegance - Cores Variadas",
+      "description": "Fabricada com tecido impermeável, seu cão ficará protegido da chuva. Uma faixa refletiva costurada em toda a extensão de suas costas auxilia nos passeios noturnos onde existe trânsito intenso de automóveis.",
+      "price": 69.9,
+      "amount": 3,
+      "picture": "https://www.petlove.com.br/images/products/185691/product/3101208.jpg?1556411227",
+      "category": "roupas"
+    },
+    {
+      "id": 10,
+      "name": "Camiseta Zooz Pets Charlie Snoopy Sleeping Amarela",
+      "description": "Ofereça para seu pet um look ultra descolado mas sem perder o conforto, com a Camiseta Zooz Pets Charlie Snoopy Sleeping Amarela. Confeccionada em poliéster e viscose que são materiais leves que permitem que a pele e os pelos transpirem normalmente.",
+      "price": 39.99,
+      "amount": 10,
+      "picture": "https://www.petlove.com.br/images/products/200845/product/Camiseta_Zooz_Pets_Charlie_Snoopy_Sleeping_Amarela__2003902_3.jpg?1556472627",
+      "category": "roupas"
+    },
+    {
+      "id": 11,
+      "name": "Boné Bichinho Chic com Viseira - Rosa",
+      "description": "O Boné Bichinho Chic com Viseira - Rosa é confeccionado em brim, estiloso e além de embelezar, protege os olhos de raios solares. Uma ótima opção para os passeios com seu pet.",
+      "price": 17.9,
+      "amount": 3,
+      "picture": "https://www.petlove.com.br/images/products/143721/product/1080_0000000032314_2.jpg?1556410893",
+      "category": "roupas"
+    },
+    {
+      "id": 12,
+      "name": "Roupa Pet Med Pós Castração Regular Dry Confort Rosa Mescla",
+      "description": "A Roupa Pet Med Pós Castração Regular Dry Confort Rosa Mesclaoferece proteção, conforto, com abertura expondo o órgão genital, contribuindo para maior liberdade dos movimentos. A alta tecnologia do Dry Confort permite que seu pet se mantenha aquecido com a roupa de forma tranquila.",
+      "price": 47.9,
+      "amount": 1,
+      "picture": "https://www.petlove.com.br/images/products/210984/product/Roupa_Pet_Med_Regular_Dry_Confort_Rosa_Mescla_2354593_1.jpg?1562351773",
+      "category": "roupas"
+    },
+    {
+      "id": 13,
+      "name": "Protetor de Orelha Pet Med Plus Color",
+      "description": "O Protetor de Orelha Pet Med Plus Color vai auxiliar na proteção do pós cirúrgico ou na anulação dos fortes barulhos dos fogos de artificio. Não permite que as orelhas fiquem agitadas, chegando por muitas vezes prejudicar o tratamento.",
+      "price": 64.9,
+      "amount": 2,
+      "picture": "https://www.petlove.com.br/images/products/210939/product/Protetor_de_Orelha_Pet_Med_Plus_Color_2354585_1.jpg?1562350261",
+      "category": "roupas"
+    },
+    {
+      "id": 14,
+      "name": "Blusa com Capuz Fábrica Pet Versalles Cinza",
+      "description": "A Blusa com Capuz Fábrica Pet Versalles Cinza é feita em moleton matelassado e detalhe de pelúcia no capuz dando mais charme a peça. Confortável e elegante para os dias mais frios.",
+      "price": 75.9,
+      "amount": 8,
+      "picture": "https://www.petlove.com.br/images/products/188747/product/versailles_com_capuz_1510324.JPG?1556448806",
+      "category": "roupas"
+    },
+    {
+      "id": 15,
+      "name": "Camiseta Zooz Pets Charlie Snoop Hug Grafite",
+      "description": "Pet no estilo descolado totalmente moderno, somente usando a Camiseta Zooz Pets Charlie Snoop Hug Grafite. Confeccionada em material leve, super macia que oferece conforto para o dia a dia dos cachorros.",
+      "price": 44,
+      "amount": 10,
+      "picture": "https://www.petlove.com.br/images/products/200843/product/Camiseta_Zooz_Pets_Charlie_Snoop_Hug_Grafite_2003881_2.jpg?1556474852",
+      "category": "roupas"
+    },
+    {
+      "id": 16,
+      "name": "Blusa Microsoft com Manga Fábrica Pet Estrela Azul",
+      "description": "A Blusa Microsoft com Manga Fábrica Pet Estrela Azul é a peça chave para deixar seu pet bem quentinho naqueles dias de temperatura bem baixa. As estampas de estrelas dão um toque especial a peça. Muito conforto, elegância e bem-estar para seu amigo de quatro patas.",
+      "price": 99,
+      "amount": 5,
+      "picture": "https://www.petlove.com.br/images/products/205531/product/Blusa_Microsoft_com_Manga_F%C3%A1brica_Pet_Estrela_Azul_2195691.jpg?1556478358",
+      "category": "roupas"
+    },
+    {
+      "id": 17,
+      "name": "Blusa com Capuz Fábrica Pet Plush Cinza",
+      "description": "As temperaturas vão caindo, os dias mais frios vão surgindo e nada de deixar sue amiguinho de quatro patas sair por ai sem roupa. A Blusa com Capuz Fábrica Pet Plush Preta, confeccionada em plush, com detalhe bordado nas costas proporciona conforto e elegância até mesmo no inverno.",
+      "price": 71.24,
+      "amount": 1,
+      "picture": "https://www.petlove.com.br/images/products/206162/product/Blusa_com_Capuz_F%C3%A1brica_Pet_Plush_Cinza_2195466.jpg?1556478154",
+      "category": "roupas"
+    },
+    {
+      "id": 18,
+      "name": "Camiseta Zooz Pets Snoopy Keep Cool Preta",
+      "description": "Deixe seu cachorro com um estilo descolado usando a Camiseta Zooz Pets Snoopy Keep Cool Preta. Confeccionada em poliéster e viscose, muito macia, oferecendo total conforto para o dia a dia dos pets.",
+      "price": 43.69,
+      "amount": 10,
+      "picture": "https://www.petlove.com.br/images/products/200841/product/Camiseta_Zooz_Pets_Snoopy_Keep_Cool_Preta_2003751_2.jpg?1556474278",
+      "category": "roupas"
+    },
+    {
+      "id": 19,
+      "name": "Roupa Pet Med Pós Castração Regular Dry Confort Verde Mescla",
+      "description": "A Roupa Pet Med Pós Castração Regular Dry Confort Verde Mescla oferece proteção, conforto, com abertura expondo o órgão genital, contribuindo para maior liberdade dos movimentos. A alta tecnologia do Dry Confort permite que seu pet se mantenha aquecido com a roupa de forma tranquila.",
+      "price": 41.39,
+      "amount": 10,
+      "picture": "https://www.petlove.com.br/images/products/210978/product/Roupa_Pet_Med_Regular_Dry_Confort_Verde_Mescla_2354592_1.jpg?1562351623",
+      "category": "roupas"
+    },
+    {
+      "id": 20,
+      "name": "Vestido Fábrica Pet Mescla Verde",
+      "description": "O Vestido Fábrica Pet Mescla Verde vai deixar sua filhota cheia de estilo. Confeccionado em tecido de algodão é super confortável, o elástico na parte da barriga contribui para melhor ajuste. A estampa delicada de elefante e o laço nas costas dão um charme especial à peça. Todo conforto e beleza que sua pet precisa para os passeios em família.",
+      "price": 67.9,
+      "amount": 10,
+      "picture": "https://www.petlove.com.br/images/products/203795/product/Vestido_F%C3%A1brica_Pet_Mescla_Verde_2144267_%281%29.jpg?1556473755",
+      "category": "roupas"
+    },
+    {
+      "id": 21,
+      "name": "Colete de Segurança Pickorruchos Montana Pétala",
+      "description": "Colete de segurança prático e confortável para garantir um excelente passeio. Todas as costuras são realizadas em uma máquina especial que costura cinto de segurança. Pickorruchos A empresa Pickorruchos confecciona vestuário e acessórios para animais desde 1989, pensando sempre em ofertar conforto e beleza. Para melhor atender tanto aos clientes como aos animais, oferece produtos distintos e variados para o seu cachorro ou gato. O animal de estimação é, hoje, parte integrante das famílias e demandam cuidados especiais, cuidados estes que a marca, satisfatoriamente, providencia em uma gama de produtos que facilitam e trazem conforto para proprietários e animais. A Pickorruchos disponibiliza desde higiene, camas, cobertores, ",
+      "price": 65.9,
+      "amount": 10,
+      "picture": "https://www.petlove.com.br/images/products/210968/product/Colete_de_Seguran%C3%A7a_Pickorruchos_Montana_P%C3%A9tala_311997.jpg?1562351352",
+      "category": "roupas"
+    },
+    {
+      "id": 22,
+      "name": "Casa Furacão Pet de Plástico - Preto",
+      "description": "A Casa Furacão Pet de Plástico foi desenvolvida com matéria prima de qualidade e protetor ultra-violeta, tornando assim um produto de longa durabilidade. Protege seu cão dos raios solares. É uma casinha desmontável com sistema de engate rápido e não utiliza parafusos, vira caminha de verão, e casinha de inverno!",
+      "price": 389.99,
+      "amount": 2,
+      "picture": "https://www.petlove.com.br/images/products/174350/product/7898490094516.jpg?1556425043",
+      "category": "casa"
+    },
+    {
+      "id": 23,
+      "name": "Casa Furacão Pet Plástico Iglu Azul",
+      "description": "A Casa Furacão Pet Plástico Iglu Azul é ideal para o aconchego e segurança do seu pet, sua praticidade veio para melhorar a vida de vocês dois. A porta com cantos arredondado facilita a passagem do cachorro e o design ajuda a manter a circulação do ar.",
+      "price": 51.49,
+      "amount": 10,
+      "picture": "https://www.petlove.com.br/images/products/208432/product/Casa_Furac%C3%A3o_Pet_Pl%C3%A1stico_Iglu_Azul_2317091.jpg?1558983970",
+      "category": "casa"
+    },
+    {
+      "id": 24,
+      "name": "Cerca NF Pet Modular",
+      "description": "A Cerca NF Pet Modular pode ser conectado com outros módulos, formando uma cerca do tamanho que você necessita. É ideal para limitar a área de convívio dos pets, evitando eventuais fugas. Fabricada com estrutura tubular em aço, que garante estabilidade e resistência ao produto.",
+      "price": 189.99,
+      "amount": 10,
+      "picture": "https://www.petlove.com.br/images/products/197220/product/Cerca_NF_Pet_Modular_-_Preta_1894272_1.jpg?1556463765",
+      "category": "casa"
+    },
+    {
+      "id": 25,
+      "name": "Canil NF Pet com Portinhola Branco",
+      "description": "Para aqueles momentos onde deixar o seu pet solto pode colocá-lo em situações de perigo o Canil NF Pet com Portinhola Branco é uma ótima opção. Prático e seguro, possui portinha que facilita a entrada e a saída do seu pet.",
+      "price": 251.99,
+      "amount": 5,
+      "picture": "https://www.petlove.com.br/images/products/192948/product/Canil_Branco_c%C3%B3pia.jpg?1556454660",
+      "category": "casa"
+    },
+    {
+      "id": 26,
+      "name": "Casa Furacão Pet de Plástico - Vermelho",
+      "description": "A Casa Furacão Pet de Plástico - Vermelho, é ultra resistente, possui sistema de engate rápido, ventilação de ar, cores vivas e perolizadas e ainda dispensa o uso de parafusos para montar. São desmontáveis praticas e higiênicas, no verão é possível desmontá-la e usar como caminha.",
+      "price": 51.39,
+      "amount": 16,
+      "picture": "https://www.petlove.com.br/images/products/171402/product/7898490093472.jpg?1556406202",
+      "category": "casa"
+    },
+    {
+      "id": 27,
+      "name": "Casa Furacão Pet de Plástico - Rosa",
+      "description": "Ultra resistente, possui sistema de engate rápido, ventilação de ar, cores vivas e perolizadas e ainda dispensa o uso de parafusos para montar. São desmontáveis, práticas e higiênicas, no verão é possível desmontá-la e usar como caminha.",
+      "price": 78.89,
+      "amount": 3,
+      "picture": "https://www.petlove.com.br/images/products/171393/product/7898490093458.jpg?1556407947",
+      "category": "casa"
+    },
+    {
+      "id": 28,
+      "name": "Casa Furacão Pet Plástico Iglu Black",
+      "description": "A Casa Furacão Pet Plástico Iglu Black é ideal para o aconchego e segurança do seu pet, sua praticidade veio para melhorar a vida de vocês dois. A porta com cantos arredondado facilita a passagem do cachorro e o design ajuda a manter a circulação do ar.",
+      "price": 70,
+      "amount": 11,
+      "picture": "https://www.petlove.com.br/images/products/208435/product/Casa_Furac%C3%A3o_Pet_Pl%C3%A1stico_Iglu_Black_2317092.jpg?1558984364",
+      "category": "casa"
+    },
+    {
+      "id": 29,
+      "name": "Casa Furacão Pet Plástico Iglu Rosa",
+      "description": "A Casa Furacão Pet Plástico Iglu Rosa é ideal para o aconchego e segurança do seu pet, sua praticidade veio para melhorar a vida de vocês dois. A porta com cantos arredondado facilita a passagem do cachorro e o design ajuda a manter a circulação do ar.",
+      "price": 54.99,
+      "amount": 7,
+      "picture": "https://www.petlove.com.br/images/products/208444/product/Casa_Furac%C3%A3o_Pet_Pl%C3%A1stico_Iglu_Rosa_2317095.jpg?1558985753",
+      "category": "casa"
+    },
+    {
+      "id": 30,
+      "name": "Portão Tubline Plus - Preto",
+      "description": "O Portão Tubline Plus , vai ajudar a proteger os cômodos da casa, ou até mesmo impedir que seu pet fuja. Tubline A Tubline iniciou sua história a mais de 10 anos, como uma empresa fabricante de produtos para bebe. Contava na época com uma linha pequena, porém já conquistando o respeito dos clientes e consumidores pela qualidade, conforto, segurança e design. Essa preocupação com a qualidade levou a Tubline a entrar em novos mercados, primeiro no de Pet Shops, uma linha de acessórios de segurança e depois em home centers, com uma linha de móveis moderna e sofisticada. Com certeza, a Tubline continuará a crescer como vem crescendo nos últimos anos, com ética e responsabilidade, garantindo sempre a segurança de seus consumidores.",
+      "price": 162,
+      "amount": 3,
+      "picture": "https://www.petlove.com.br/images/products/172513/product/Grade-para-Porta-Tubline-Plus---Preta.jpg?1556421836",
+      "category": "casa"
+    },
+    {
+      "id": 31,
+      "name": "Casa Pet Injet Prime Colors Dog House Evolution Vermelha",
+      "description": "A Casa Pet Injet Prime Colors Dog House Evolution Vermelha, elaborada com matéria-prima de alta qualidade, possui paredes e telhados super reforçados. A porta larga facilita a entrada e saída do pet. Com pontos de ventilação que permite maior frescor e um sono mais tranquilo. Muito confortável, vai deixar seu cão seguro, protegido e bem aconchegante.",
+      "price": 62,
+      "amount": 10,
+      "picture": "https://www.petlove.com.br/images/products/195720/product/Casa_Pet_Injet_Prime_Colors_Dog_House_Evolution_Vermelha_1858178_1.jpg?1558656470",
+      "category": "casa"
+    },
+    {
+      "id": 32,
+      "name": "Cama Plástica Furacão Pet Paris Black",
+      "description": "A Cama Plástica Furacão Pet Paris Black é ideal para seu amiguinho relaxar e cochilar, evita o contato direto com pisos frios para que o pet não fique doente, além de ser fácil de transportar.",
+      "price": 99,
+      "amount": 10,
+      "picture": "https://www.petlove.com.br/images/products/215581/product/Cama_Pl%C3%A1stica_Furac%C3%A3o_Pet_Paris_Black_-_Black_2424457.jpg?1572350401",
+      "category": "cama"
+    },
+    {
+      "id": 33,
+      "name": "Sofá Luppet Cama Vermelho para Cães e Gatos",
+      "description": "O Sofá Luppet Cama Vermelho para Cães e Gatos é uma cama em formato de sofá, o colchão é solto podendo ser retirado para lavar.",
+      "price": 145,
+      "amount": 19,
+      "picture": "https://www.petlove.com.br/images/products/224491/product/Sof%C3%A1_Luppet_Cama_Vermelho_para_C%C3%A3es_e_Gatos_1430727.jpg?1590592557",
+      "category": "cama"
+    },
+    {
+      "id": 34,
+      "name": "Cama Retangular Luppet Conforto Caramelo",
+      "description": "A Cama Retangular Luppet Conforto Caramelo é macia e acolchoada, elaborada com tecidos especiais proporciona conforto térmico, podendo ser usada no verão ou no inverno. Confortável, se ajusta no formato do animal. Perfeita para o descanso tranquilo do seu pet.",
+      "price": 147,
+      "amount": 5,
+      "picture": "https://www.petlove.com.br/images/products/200667/product/Cama_Retangular_Luppet_Conforto_Caramelo_1987165_1.jpg?1556467847",
+      "category": "cama"
+    },
+    {
+      "id": 35,
+      "name": "Cama Desmontável Hello Pet Café com Tecido Tribal",
+      "description": "A Cama Desmontável Hello Pet Marrom com Tecido Dog em MDF, revestida de material sintético e elaborada com sistema exclusivo de encaixe possibilitando fácil montagem e desmontagem da peça. Acompanha colchão em jacquard, com enchimento removível, ideal para lavagem à máquina além de almofada de ossinho, super confortável para seu pet.",
+      "price": 211.9,
+      "amount": 5,
+      "picture": "https://www.petlove.com.br/images/products/175321/product/7898611440963_2.jpg?1556426766",
+      "category": "cama"
+    },
+    {
+      "id": 36,
+      "name": "Cama 2 em 1 Fábrica Pet Nave - Azul",
+      "description": "A Cama 2 em 1 Fábrica Pet Nave - Azul foi elaborada em estampa de pequenos coqueiros com fundo na cor Navy, uma cor usada pela marinha que deixará o ambiente mais elegante e harmonioso. A Cama 2 em 1 é dupla face, pode ser usada dos dois lados. O zíper em toda a lateral e na almofada facilita a retirada do enchimento para lavagem da capa. O enchimento em fibra siliconada não retém umidade.",
+      "price": 139.99,
+      "amount": 6,
+      "picture": "https://www.petlove.com.br/images/products/194285/product/Cama_2_em_1_F%C3%A1brica_Pet_Nave_-_Azul_1827524_1.jpg?1556452954",
+      "category": "cama"
+    },
+    {
+      "id": 37,
+      "name": "Cama Carlu Pet House Half Moon Dourado",
+      "description": "A Cama Carlu Pet House Half Moon Dourado é sensacional. Super estilosa, designer futurístico que garante conforto total ao seu pet. Produzida em MDF, com pintura e acabamento de alto nível.",
+      "price": 269.99,
+      "amount": 1,
+      "picture": "https://www.petlove.com.br/images/products/193771/product/1812060_1_c%C3%B3pia.jpg?1556450199",
+      "category": "cama"
+    },
+    {
+      "id": 38,
+      "name": "Brinquedo American Pets Bolinha Inteligente ",
+      "description": "Com o Brinquedo American Pets Bolinha Inteligente seu pet vai ficar entretido, além de praticar atividades que auxiliam em seu desenvolvimento e disciplina.",
+      "price": 21.9,
+      "amount": 99,
+      "picture": "https://www.petlove.com.br/images/products/141208/product/Bolinha.jpg?1556317239",
+      "category": "brinquedos"
+    },
+    {
+      "id": 39,
+      "name": "Brinquedo Chalesco Pelúcia Crocodilo",
+      "description": "Com o Brinquedo Chalesco Crocodilo de Pelúcia as brincadeiras do seu pet serão mais divertidas. Uma ótima opção para livrar seu cão da ansiedade e do tédio.",
+      "price": 21.99,
+      "amount": 10,
+      "picture": "https://www.petlove.com.br/images/products/211757/product/Brinquedo_Chalesco_Pel%C3%BAcia_Crocodilo_1200891_1.jpg?1564082235",
+      "category": "brinquedos"
+    },
+    {
+      "id": 40,
+      "name": "Brinquedo Chalesco Pelúcia Pirâmide",
+      "description": "O Brinquedo Chalesco Pelúcia Pirâmide é leve, ótimo para seu pet levar de um lado para o outro, sacudir, jogar. Além do seu amiguinho ficar longe da solidão e monotonia vai deixar as brincadeiras mais divertidas.",
+      "price": 20,
+      "amount": 10,
+      "picture": "https://www.petlove.com.br/images/products/210844/product/Brinquedo_Chalesco_Pel%C3%BAcia_Pir%C3%A2mide_31018611_1.jpg?1562273646",
+      "category": "brinquedos"
+    },
+    {
+      "id": 41,
+      "name": "Brinquedo KONG Wild Knots Bear Marrom para Cães",
+      "description": "O Brinquedo Kong Wild Knots Bear Marrom para Cães é macio e fofo do lado de fora e durável e forte no interior. Wild Knots Bear são a certeza de ser um sucesso com cães e seus donos. Os cães amam o esqueleto atado e o corpo de pelúcia reforçado proporciona maior durabilidade. O brinquedo tem menos enchimento para menos bagunça e produz um chiado para tornar o jogo mais atraente.",
+      "price": 50,
+      "amount": 10,
+      "picture": "https://www.petlove.com.br/images/products/212719/product/Brinquedo_KONG_Wild_Knots_Bear_Marrom_para_C%C3%A3es_311008__.jpg?1565975911",
+      "category": "brinquedos"
+    },
+    {
+      "id": 42,
+      "name": "Brinquedo KONG Wild Knots Bear Bege para Cães",
+      "description": "O Brinquedo Kong Wild Knots Bear Bege para Cães são macios e fofos do lado de fora e durável e forte no interior. Wild Knots Bear são a certeza de ser um sucesso com cães e seus donos. Os cães amam o esqueleto atado e o corpo de pelúcia reforçado proporciona maior durabilidade. O brinquedo tem menos enchimento para menos bagunça e produz um chiado para tornar o jogo mais atraente.",
+      "price": 79,
+      "amount": 10,
+      "picture": "https://www.petlove.com.br/images/products/179269/product/KONG_WILD_KNOTS_BEAR_%28NKR1_NKR3_NKR5_NKRX%29_-_MARROM_CLARO.jpg?1556435879",
+      "category": "brinquedos"
+    },
+    {
+      "id": 43,
+      "name": "Brinquedo Chalesco Cachorro Luxo para Cães",
+      "description": "Com o Brinquedo Chalesco Cachorro Luxo para Cães - Rosa com Azul as brincadeiras do seu pet serão mais divertidas. Uma ótima opção para livrar seu cão da ansiedade e do tédio.",
+      "price": 28,
+      "amount": 10,
+      "picture": "https://www.petlove.com.br/images/products/211774/product/Brinquedo_Chalesco_Cachorro_Luxo_para_C%C3%A3es_-_Rosa_com_Azul_3107582_1.jpg?1564141098",
+      "category": "brinquedos"
+    },
+    {
+      "id": 44,
+      "name": "Brinquedo Petwi Pelúcia Pãozinho",
+      "description": " Brinquedo Petwi Pelúcia Pãozinho feito em poliéster com características que divertem o pet para novas brincadeiras. É macio, confortável e seu amiguinho pode dormir abraçadinho",
+      "price": 99,
+      "amount": 10,
+      "picture": "aew",
+      "category": "https://www.petlove.com.br/images/products/212412/product/Brinquedo_Petwi_Pel%C3%BAcia_P%C3%A3ozinho_-_Tam._%C3%9Anico__2382553_1.jpg?1565613518"
+    },
+    {
+      "id": 45,
+      "name": "Brinquedo KONG Skakers Honkers Duck Pato Cinza",
+      "description": "Interativo, o Brinquedo KONG Skakers Honkers Duck Pato Cinza, elaborado com material reforçado, é perfeito para divertidas mordidas e brincadeiras de jogar e buscar. Possui apito que contribui para estimular ainda mais a diversão. Leve, fácil de ser levado de um lado para o outro. Proporciona distração, alivia o estresse, estimula o raciocínio além de promover atividade física para seu pet.",
+      "price": 99,
+      "amount": 10,
+      "picture": "https://www.petlove.com.br/images/products/209541/product/Brinquedo_KONG_Skakers_Honkers_Duck_%28SHK31%29_Pato_Cinza_2185922.jpg?1560862030",
+      "category": "brinquedos"
+    },
+    {
+      "id": 46,
+      "name": "Brinquedo Furacão Pet Dental Bone Algodão com Nó",
+      "description": "O Brinquedo Furacão Pet Dental Bone Algodão com Nó foi confeccionado em material de alta qualidade e durabilidade, ajuda a combater o tártaro nos dentes dos cães. Seu pet vai estar sempre ativo de forma saudável e divertida!",
+      "price": 7.99,
+      "amount": 10,
+      "picture": "https://www.petlove.com.br/images/products/186132/product/3100921.jpg?1556340514",
+      "category": "brinquedos"
+    },
+    {
+      "id": 47,
+      "name": "Brinquedo Jambo Mordedor Pelúcia Gorila Marrom",
+      "description": "O Brinquedo Jambo Mordedor Pelúcia Gorila Marrom tem aparência com características divertidas que o seu pet vai amar, feito em poliéster e com costuras reforçadas garante mais resistência para as brincadeiras com mordidas e puxões.",
+      "price": 39.99,
+      "amount": 10,
+      "picture": "https://www.petlove.com.br/images/products/214057/product/Brinquedo_Jambo_Mordedor_Pel%C3%BAcia_Gorila_Marrom_-_Marrom_2420227.jpg?1570106608",
+      "category": "brinquedos"
     }
   ]
 }
