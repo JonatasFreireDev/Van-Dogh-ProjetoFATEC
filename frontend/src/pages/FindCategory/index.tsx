@@ -23,23 +23,32 @@ const FindCategory: React.FC = () => {
   const paramter = new URLSearchParams(String(location.search)).get('name');
 
   useEffect(() => {
+    setPage(1);
+  }, [paramter]);
+
+  useEffect(() => {
     async function loadProductsAsync(): Promise<void> {
       try {
         const response = await api.get<IProduct[]>(
-          `/products?category=${paramter}&_page=${page}`,
+          `/products?category=${paramter}&_page=${page}&_limit=9`,
         );
 
         const { data } = response;
 
         if (data.length <= 0) {
-          throw new Error('Categoria nao foi encontrada !');
+          setProducts([]);
+          throw new Error('Não há produtos !');
         }
 
         setProducts([...data]);
         setFailure({ status: false, message: '' });
         setLoading(false);
       } catch (err) {
-        setFailure({ status: true, message: err.message });
+        if (page > 1) {
+          setFailure({ status: true, message: 'Não há mais produtos' });
+        } else {
+          setFailure({ status: true, message: err.message });
+        }
         setLoading(false);
       }
     }
@@ -64,35 +73,36 @@ const FindCategory: React.FC = () => {
     <S.Container>
       {loading ? (
         <Loading />
-      ) : failure.status ? (
-        <ErrorMessage message={failure.message} />
       ) : (
         <>
           <h1>{paramter}</h1>
-          <S.Content>
-            {products.map((product) => (
-              <S.Product key={product.id}>
-                <S.Image>
-                  <img src={product.picture} alt={product.name} />
-                </S.Image>
-                <S.Description>
-                  <Link to={`/products/${product.id}`}>
-                    <h2>{product.name}</h2>
-                  </Link>
-                  <p>
-                    R$ {product.price}
-                    <small>.00</small>
-                  </p>
-                </S.Description>
-                <S.Favorite isFavorite={hasFavorite(product.id)}>
-                  <GiPawHeart
-                    title="Adicionar aos favoritos !"
-                    onClick={() => handleFavorite(product.id)}
-                  />
-                </S.Favorite>
-              </S.Product>
-            ))}
-          </S.Content>
+
+          {failure.status ? (
+            <ErrorMessage message={failure.message} />
+          ) : (
+            <S.Content>
+              {products.map((product) => (
+                <S.Product key={product.id}>
+                  <S.Image>
+                    <img src={product.picture} alt={product.name} />
+                  </S.Image>
+                  <S.Description>
+                    <Link to={`/products/${product.id}`}>
+                      <h3>{product.name}</h3>
+                    </Link>
+                    <strong>R$ {product.price}</strong>
+                  </S.Description>
+                  <S.Favorite isFavorite={hasFavorite(product.id)}>
+                    <GiPawHeart
+                      title="Adicionar aos favoritos !"
+                      onClick={() => handleFavorite(product.id)}
+                    />
+                  </S.Favorite>
+                </S.Product>
+              ))}
+            </S.Content>
+          )}
+
           <S.Pagination page={page}>
             <button
               onClick={() => {
@@ -105,11 +115,11 @@ const FindCategory: React.FC = () => {
             <span>{page}</span>
             <button
               onClick={() => {
-                products.length <= 10
-                  ? console.log('não permitido')
-                  : setPage(page + 1);
+                if (products.length >= 9) {
+                  setPage(page + 1);
+                }
               }}
-              disabled={products.length <= 10 ? true : false}
+              disabled={products.length <= 8 ? true : false}
             >
               Next
             </button>

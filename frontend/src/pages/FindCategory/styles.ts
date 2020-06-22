@@ -10,6 +10,7 @@ interface Pagination {
 
 export const Container = styled.div`
   max-width: 980px;
+  padding: 10px;
   width: 100%;
   margin: 20px auto;
 
@@ -28,7 +29,7 @@ export const Container = styled.div`
 export const Content = styled.div`
   display: flex;
   flex-direction: row;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
   flex-wrap: wrap;
   max-width: 980px;
@@ -46,10 +47,13 @@ export const Content = styled.div`
 
 export const Product = styled.div`
   display: grid;
+  max-width: 280px;
+  height: 400px;
   grid-template-areas: 'img img' 'desc fav';
   margin: 13px;
   border-radius: 10px;
   transition: transform 0.3s;
+  padding: 10px;
   box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.75);
 
   &:hover {
@@ -59,30 +63,32 @@ export const Product = styled.div`
 
 export const Image = styled.div`
   display: flex;
-  max-width: 100%;
+  max-width: 280px;
   max-height: 200px;
   align-items: center;
   justify-content: center;
   grid-area: img;
+  margin: auto;
 
   img {
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
+    max-width: 260px;
     max-height: 200px;
   }
 `;
 
 export const Description = styled.div`
   display: block;
-  padding: 7px;
+  margin: auto;
   grid-area: desc;
 `;
 
 export const Favorite = styled.div<PropsContent>`
   display: flex;
+  margin: auto;
   justify-content: flex-end;
   grid-area: fav;
-  padding: 7px;
 
   svg {
     cursor: pointer;

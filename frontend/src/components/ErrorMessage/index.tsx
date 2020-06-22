@@ -11,8 +11,7 @@ interface IMessage {
 const ErrorMessage: React.FC<IMessage> = ({ message = 'Erro' }) => {
   return (
     <S.Container>
-      <MdErrorOutline size={80} />
-      <p>Error</p>
+      <MdErrorOutline size={70} />
       <span>{message}</span>
     </S.Container>
   );

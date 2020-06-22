@@ -1,21 +1,13 @@
 import React, { createContext, useContext, useCallback, useState } from 'react';
 import api from '../services/api';
 
+import IProduct from '../Interface/IProduct';
+
 interface FavoriteContextData {
-  favorites: Product[];
+  favorites: IProduct[];
   addFavorite(id: number): void;
   rmFavorite(id: number): void;
   hasFavorite(id: number): boolean;
-}
-
-interface Product {
-  id: number;
-  name: string;
-  description: string;
-  price: number;
-  amount: number;
-  picture: string;
-  category: string;
 }
 
 export const FavoriteContext = createContext<FavoriteContextData>(
@@ -23,13 +15,13 @@ export const FavoriteContext = createContext<FavoriteContextData>(
 );
 
 export const FavoriteProvider: React.FC = ({ children }) => {
-  const [favorites, setFavorites] = useState<Product[]>(() => {
+  const [favorites, setFavorites] = useState<IProduct[]>(() => {
     const fav = localStorage.getItem('VanDog:favoritos');
 
     if (fav) {
       return JSON.parse(fav);
     } else {
-      return [] as Product[];
+      return [] as IProduct[];
     }
   });
 
@@ -38,7 +30,7 @@ export const FavoriteProvider: React.FC = ({ children }) => {
       const hasOneFav = favorites.find((fav) => fav.id === id);
       if (hasOneFav) return;
 
-      const response = await api.get<Product[]>(`/products?id=${id}`);
+      const response = await api.get<IProduct[]>(`/products?id=${id}`);
       const [product] = response.data;
 
       const teste = JSON.stringify([product, ...favorites]);

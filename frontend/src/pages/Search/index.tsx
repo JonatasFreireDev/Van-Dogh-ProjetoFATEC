@@ -72,37 +72,36 @@ const Search: React.FC = () => {
     <S.Container>
       {loading ? (
         <Loading />
-      ) : failure.status ? (
-        <ErrorMessage message={failure.message} />
       ) : (
         <>
-          <S.Content>
-            <h3>
-              Busca por <strong>{paramter}</strong> resultou em...
-            </h3>
-            {products.map((product) => (
-              <S.Product key={product.id}>
-                <S.Image>
-                  <img src={product.picture} alt={product.name} />
-                </S.Image>
-                <S.Description>
-                  <Link to={`/products/${product.id}`}>
-                    <h2>{product.name}</h2>
-                  </Link>
-                  <p>
-                    R$ {product.price}
-                    <small>.00</small>
-                  </p>
-                </S.Description>
-                <S.Favorite isFavorite={hasFavorite(product.id)}>
-                  <GiPawHeart
-                    title="Adicionar aos favoritos !"
-                    onClick={() => handleFavorite(product.id)}
-                  />
-                </S.Favorite>
-              </S.Product>
-            ))}
-          </S.Content>
+          <h3>
+            Busca por <strong>{paramter}</strong> resultou em...
+          </h3>
+          {failure.status ? (
+            <ErrorMessage message={failure.message} />
+          ) : (
+            <S.Content>
+              {products.map((product) => (
+                <S.Product key={product.id}>
+                  <S.Image>
+                    <img src={product.picture} alt={product.name} />
+                  </S.Image>
+                  <S.Description>
+                    <Link to={`/products/${product.id}`}>
+                      <h2>{product.name}</h2>
+                    </Link>
+                    <p>R$ {product.price}</p>
+                  </S.Description>
+                  <S.Favorite isFavorite={hasFavorite(product.id)}>
+                    <GiPawHeart
+                      title="Adicionar aos favoritos !"
+                      onClick={() => handleFavorite(product.id)}
+                    />
+                  </S.Favorite>
+                </S.Product>
+              ))}
+            </S.Content>
+          )}
 
           <S.Pagination page={page}>
             <button

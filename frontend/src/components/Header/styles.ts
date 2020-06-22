@@ -1,6 +1,10 @@
 import styled from 'styled-components';
 import { Link as LinkDom } from 'react-router-dom';
 
+interface DotProps {
+  quantity: boolean;
+}
+
 export const Container = styled.div`
   background: #77dcff;
   display: flex;
@@ -77,6 +81,9 @@ export const Form = styled.form`
 `;
 
 export const Menu = styled.div`
+  display: flex;
+  flex-direction: row;
+
   svg {
     color: ${(props) => props.theme.colors.darkOrange};
     margin-left: 10px;
@@ -111,4 +118,16 @@ export const Link = styled(LinkDom)`
     width: 60px;
     height: 60px;
   }
+`;
+
+export const Dot = styled.div<DotProps>`
+  display: ${(props) => (props.quantity ? 'block' : 'none')};
+  background: ${(props) => props.theme.colors.white};
+  position: absolute;
+  height: 17px;
+  width: 17px;
+  border-radius: 50%;
+  top: -5px;
+  right: -5px;
+  font-size: 12px;
 `;

@@ -1,5 +1,4 @@
 import styled from 'styled-components';
-import { Link } from 'react-router-dom';
 
 interface PropsContent {
   isFavorite: boolean;
@@ -8,6 +7,7 @@ interface PropsContent {
 export const Container = styled.div`
   max-width: 980px;
   width: 100%;
+  padding: 10px;
   margin: 20px auto;
 
   @media only screen and (max-width: 600px) {
@@ -22,6 +22,34 @@ export const Content = styled.div`
   flex-direction: row;
   width: 100%;
   margin-bottom: 100px;
+
+  button {
+    font-family: Arial, Helvetica, sans-serif;
+    border: 0px;
+    border-radius: 10px;
+    width: 100%;
+    height: 50px;
+    background: ${(props) => props.theme.colors.buttonBuy};
+    transition: all 0.4s;
+    margin-top: auto;
+
+    &:hover {
+      background: ${(props) => props.theme.colors.bluSky};
+      box-shadow: inset 0 0 0 2px #53a7ea;
+    }
+
+    &:active {
+      box-shadow: inset 0 0 0 25px ${(props) => props.theme.colors.buttonBuy};
+    }
+  }
+
+  @media only screen and (max-width: 600px) {
+    & {
+      padding: 10px;
+      flex-direction: column;
+      margin: auto;
+    }
+  }
 `;
 
 export const Image = styled.div`
@@ -44,6 +72,13 @@ export const Details = styled.div`
   grid-template-areas: 'head' 'details' 'desc';
   width: 100%;
   margin-left: 30px;
+
+  @media only screen and (max-width: 600px) {
+    & {
+      margin-top: 10px;
+      margin-left: 0px;
+    }
+  }
 `;
 
 export const DetailsHeader = styled.div<PropsContent>`
@@ -73,17 +108,11 @@ export const DetailsPrice = styled.div`
   justify-content: space-between;
   align-items: center;
   grid-area: details;
-
-  button {
-    border: 0px;
-    border-radius: 10px;
-    width: 130px;
-    height: 50px;
-    background: ${(props) => props.theme.colors.buttonBuy};
-  }
+  margin-top: auto;
 `;
 
 export const Description = styled.div`
   width: 100%;
+  margin-top: auto;
   grid-area: desc;
 `;

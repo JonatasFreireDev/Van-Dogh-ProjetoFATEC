@@ -10,8 +10,17 @@ interface Pagination {
 
 export const Container = styled.div`
   max-width: 980px;
+  padding: 10px;
   width: 100%;
   margin: 20px auto;
+
+  & > h3 {
+    margin-bottom: 20px;
+
+    strong {
+      font-weight: bold;
+    }
+  }
 
   @media only screen and (max-width: 600px) {
     & {
@@ -24,14 +33,6 @@ export const Content = styled.div`
   max-width: 980px;
   width: 100%;
   margin: 20px auto;
-
-  & > h3 {
-    margin-bottom: 20px;
-
-    strong {
-      font-weight: bold;
-    }
-  }
 `;
 
 export const Product = styled.div`

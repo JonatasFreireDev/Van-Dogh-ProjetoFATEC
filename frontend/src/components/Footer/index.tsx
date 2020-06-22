@@ -14,7 +14,7 @@ const Footer: React.FC = () => {
         <S.MapaSite>
           <iframe
             title="Map"
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3680.2252015601252!2d-47.336993285205175!3d-22.71986948510712!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94c89bac486a9fff%3A0x871c894a41e54f17!2sR.%20Andara%C3%AD%20-%20Jardim%20Novo%20Horizonte%2C%20Americana%20-%20SP%2C%2013471-471!5e0!3m2!1sen!2sbr!4v1591223620040!5m2!1sen!2sbr"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d235527.3268149293!2d-47.43086462526655!3d-22.723985881513904!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94c890a71cafb7ff%3A0x53f1339f749c58bd!2sAmericana%20-%20State%20of%20S%C3%A3o%20Paulo!5e0!3m2!1sen!2sbr!4v1592852082382!5m2!1sen!2sbr"
             width="500"
             height="350"
             frameBorder="0"

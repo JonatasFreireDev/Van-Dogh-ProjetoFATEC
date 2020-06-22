@@ -8,6 +8,7 @@ import Loading from '../../components/Loading';
 import List from '../../components/List';
 
 import { useFavorite } from '../../hooks/FavoriteContext';
+import { useCart } from '../../hooks/CartContext';
 import { useParams } from 'react-router-dom';
 
 import { GiPawHeart } from 'react-icons/gi';
@@ -28,6 +29,7 @@ const Product: React.FC = () => {
   const [loading, setLoading] = useState(true);
   const [failure, setFailure] = useState({ status: false, message: '' });
   const { hasFavorite, addFavorite, rmFavorite } = useFavorite();
+  const { addToCart } = useCart();
   const { id } = useParams();
 
   useEffect(() => {
@@ -118,13 +120,14 @@ const Product: React.FC = () => {
                 </p>
                 <span>Quantidade: {product.amount}</span>
               </div>
-              <button>Comprar</button>
             </S.DetailsPrice>
 
             <S.Description>
               <h3>Descrição:</h3>
               <p>{product.description}</p>
             </S.Description>
+
+            <button onClick={() => addToCart(product.id)}>COMPRAR</button>
           </S.Details>
         </S.Content>
       )}

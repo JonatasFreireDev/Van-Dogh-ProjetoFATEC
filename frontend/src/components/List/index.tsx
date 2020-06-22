@@ -23,12 +23,11 @@ interface Item {
 
 const List: React.FC<Config> = ({ items, nameList = 'List' }) => {
   const renderPrice = useCallback(
-    (value: number, type?: '$' | string) => (
+    (value: number, type = '$') => (
       <S.Price>
         <span>
           {type} {value.toLocaleString('pt-BR')}
         </span>
-        <small>00</small>
       </S.Price>
     ),
     [],

@@ -1,26 +1,23 @@
 import React, { useCallback, useState } from 'react';
 import * as S from './styles';
 
-import { useHistory } from 'react-router-dom';
+import { useHistory, Link } from 'react-router-dom';
+
+import { useCart } from '../../hooks/CartContext';
 
 import Dog from '../../assets/Dog.svg';
 import Bed from '../../assets/Bed.svg';
 import Clothes from '../../assets/Clothes.svg';
-import Coleira from '../../assets/Dog.svg';
+import Coleira from '../../assets/Coleira.svg';
 import House from '../../assets/House.svg';
 import Meat from '../../assets/Meat.svg';
 import Toys from '../../assets/Toys.svg';
-import {
-  MdSearch,
-  MdNotifications,
-  // MdNotificationsActive,
-  MdShoppingCart,
-  MdPerson,
-} from 'react-icons/md';
+import { MdSearch, MdShoppingCart, MdPerson } from 'react-icons/md';
 
 const Header: React.FC = () => {
   const [search, setSearch] = useState<string>('');
   const history = useHistory();
+  const { quantity } = useCart();
 
   const handleSubmit = useCallback(
     async (e) => {
@@ -53,8 +50,12 @@ const Header: React.FC = () => {
           </div>
         </S.Form>
         <S.Menu>
-          <MdNotifications size={28} />
-          <MdShoppingCart size={28} />
+          <Link to="/cart" style={{ position: 'relative' }}>
+            <S.Dot quantity={!!quantity}>
+              {quantity > 0 ? quantity : false}
+            </S.Dot>
+            <MdShoppingCart size={28} />
+          </Link>
           <MdPerson size={28} />
         </S.Menu>
       </S.Content>
