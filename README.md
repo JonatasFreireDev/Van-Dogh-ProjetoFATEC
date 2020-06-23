@@ -29,8 +29,10 @@ Pronto, já pode testar o app, o comando acima instala o json server e executa e
 
 ## Prints
 
-<img src="/assets/print1.png" alt="home" title="home"  width="50%">
-<img src="/assets/print2.png" alt="produto" title="produto"  width="50%">
-<img src="/assets/print3.png" alt="carrinho" title="carrinho"  width="50%">
-<img src="/assets/print4.png" alt="categoria" title="categoria"  width="50%">
-<img src="/assets/print5.png" alt="pesquisa" title="pesquisa"  width="50%">
+<p align="center">
+  <img src="/assets/print1.png" alt="home" title="home"  width="70%">
+  <img src="/assets/print2.png" alt="produto" title="produto"  width="70%">
+  <img src="/assets/print3.png" alt="carrinho" title="carrinho"  width="70%">
+  <img src="/assets/print4.png" alt="categoria" title="categoria"  width="70%">
+  <img src="/assets/print5.png" alt="pesquisa" title="pesquisa"  width="70%">
+</p>
