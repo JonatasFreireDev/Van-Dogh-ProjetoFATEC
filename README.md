@@ -18,6 +18,18 @@ $ yarn
 $ yarn start
 ```
 
+OBS: para executar os passos acima, certifique de ter instalado em seu computador o node e o yarn. Se caso aparecer o seguinte erro:
+
+> yarn : O arquivo C:\Users\Jonatas\AppData\Roaming\npm\yarn.ps1 não pode ser carregado porque a execução de scripts foi desabilitada neste sistema. Para obter mais informações, consulte about_Execution_Policies em 
+https://go.microsoft.com/fwlink/?LinkID=135170.
+
+Execute o seguinte comando no prompt de comando como Administrador:
+
+```sh
+$  Set-ExecutionPolicy Unrestricted
+```
+Reinicie o terminal e execute o yarn novamente.
+
 O comando acima vai instalar as dependencias do projeto e, após um tempo, abrir o projeto no navegador. No segundo terminal, basta executar o seguinte comando:
 
 ```sh
